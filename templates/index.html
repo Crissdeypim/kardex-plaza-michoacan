@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Kardex Plaza Michoacan</title>
+<style>
+body{
+background:#111;
+color:white;
+font-family:Arial;
+text-align:center;
+padding:40px;
+}
+.card{
+max-width:700px;
+margin:auto;
+background:#1e1e1e;
+padding:30px;
+border-radius:15px;
+}
+.subtitle{
+color:#b39ddb;
+margin-bottom:30px;
+}
+input{
+margin:10px;
+padding:10px;
+width:90%;
+background:#2b2b2b;
+color:white;
+border:1px solid #444;
+border-radius:8px;
+}
+button{
+background:#7b1fa2;
+color:white;
+border:none;
+padding:15px 30px;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+}
+</style>
+</head>
+<body>
+<div class="card">
+<h1>KARDEX PLAZA MICHOACAN</h1>
+<div class="subtitle">Sistema de actualización de cursos</div>
+
+<form action="/upload" method="POST" enctype="multipart/form-data">
+<p>Sube tu Kardex:</p>
+<input type="file" name="kardex" required>
+
+<p>Sube tu reporte:</p>
+<input type="file" name="reporte" required>
+
+<br><br>
+<button type="submit">Actualizar Kardex</button>
+</form>
+</div>
+</body>
+</html>
